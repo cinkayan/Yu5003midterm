@@ -95,14 +95,14 @@ Navigation bar
 Banner
 ************************************/
 .banner{
-	background: url('../img/string.jpg') no-repeat center top;
+	background: url('../img/cover.jpg') no-repeat center top;
     background-size: cover;
-	min-height: 580px;
+	min-height:480px;
     position: relative;
 }
 .bg-color{
 	background-color: RGBA(117, 117, 112, 0.82);
-	min-height: 580px;
+	min-height: 520px;
 }
 .text-dec{
 	font-size: 24px;
@@ -198,7 +198,7 @@ Banner
     padding-right: 0px;
 }
 .big-text{
-    font-size: 30px;
+    font-size: 35px;
 }
 .small-text{
     font-size: 16px;
@@ -225,19 +225,20 @@ Banner
 /***********************************
 Survey
 ************************************/
-body{
-	background-color:#569597
- 	}
-
 .myForm {
 font-family:  'Open Sans', sans-serif;
 width: 30em;
 padding: 1em;
 border: 1px solid #ccc;
-	line-height: 1.52;
-	color: #717f86;
-	font-size: 16px;
-	font-weight: 400;
+line-height: 1.52;
+color: #717f86;
+font-size: 16px;
+background-color: #B0B7AC !important;
+}
+
+.myForm h2 {
+	text-align: center;
+	padding-bottom: 10px;
 }
 
 .myForm * {
@@ -249,9 +250,8 @@ border: none;
 padding: 0;
 }
 
-.myForm legend,
-.myForm label {
-padding: 0;
+.myForm legend{
+padding: 20px 0 10px 0;
 font-weight: bold;
 }
 
@@ -265,11 +265,7 @@ text-align: left;
 display: block;
 }
 
-.myForm input[type="text"],
-.myForm input[type="tel"],
-.myForm input[type="email"],
-.myForm input[type="datetime-local"],
-.myForm select,
+
 .myForm textarea {
 float: right;
 width: 60%;
@@ -277,14 +273,11 @@ border: 1px solid #ccc;
 font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 font-size: 0.9em;
 padding: 0.3em;
-}
-
-.myForm textarea {
 height: 100px;
 }
 
-.myForm input[type="radio"],
-.myForm input[type="checkbox"] {
+
+.myForm input[type="radio"]{
 margin-left: 40%;
 }
 
@@ -302,7 +295,16 @@ margin-top: 1.8em;
 background: #ccc;
 cursor: pointer;
 }
-</style>
+
+.myForm .btn{
+    background-color: #569597;
+    color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+	align: center;
+}
 /***********************************
 facts
 ************************************/
@@ -372,10 +374,10 @@ video
 Course
 ************************************/
 [class*=" imghvr-"] figcaption, [class^="imghvr-"] figcaption {
-    background-color: #569597;
+    background-color: #B0B7AC;
 }
 [class*=" imghvr-"], [class^="imghvr-"] {
-    background-color: #569597;
+    background-color: #B0B7AC;
     color: #fff;
 }
 
@@ -421,8 +423,28 @@ li a:hover{
 }
 
 /***********************************
+Community
+************************************/
+#community {
+    background-color: #B0B7AC !important;
+}
+
+.pm-staff-profile-details{
+	color:white;
+	padding-top: 15px;
+}
+
+.pm-staff-profile-name{
+	font-size:22px;
+
+}
+
+/***********************************
 Contact Us
 ************************************/
+#contact{
+    background-color: white !important;
+}
 .contact form .form {
     width: 100%;
     height: auto;

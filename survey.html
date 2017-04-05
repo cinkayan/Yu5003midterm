@@ -16,74 +16,37 @@
 
     <form class="myForm" method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
 
-    <p>
-    <label>Name
-    <input type="text" name="customer_name" required>
-    </label>
-    </p>
-
-    <p>
-    <label>Phone
-    <input type="tel" name="phone_number">
-    </label>
-    </p>
-
-    <p>
-    <label>Email
-    <input type="email" name="email_address">
-    </label>
-    </p>
+    <h2>Decide Your Track</h2>
 
     <fieldset>
-    <legend>Which taxi do you require?</legend>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="car"> Car </label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="van"> Van </label></p>
-    <p><label class="choice"> <input type="radio" name="taxi" required value="tuktuk"> Tuk Tuk </label></p>
+    <legend>What's your Guzheng level?</legend>
+    <p><label class="choice"> <input type="radio" name="level" required value="noexperience"> No experience </label></p>
+    <p><label class="choice"> <input type="radio" name="level" required value="beginner"> Beginner </label></p>
+    <p><label class="choice"> <input type="radio" name="level" required value="experienced"> Experienced </label></p>
     </fieldset>
 
     <fieldset>
-    <legend>Extras</legend>
-    <p><label class="choice"> <input type="checkbox" name="extras" value="baby"> Baby Seat </label></p>
-    <p><label class="choice"> <input type="checkbox" name="extras" value="wheelchair"> Wheelchair Access </label></p>
-    <p><label class="choice"> <input type="checkbox" name="extras" value="tip"> Stock Tip </label></p>
+    <legend>What is your concern about learning Guzheng?</legend>
+    <p><label class="choice"> <input type="radio" name="concern" required value="femaleoriented"> Female-Oriented </label></p>
+    <p><label class="choice"> <input type="radio" name="concern" required value="notpopular"> Not popular </label></p>
+    <p><label class="choice"> <input type="radio" name="concern" required value="difficult"> Difficult </label></p>
+    </fieldset>
+
+    <fieldset>
+    <legend>What are you trying to achieve in this site?</legend>
+    <p><label class="choice"> <input type="radio" name="goal" required value="knowledge"> Gain Knowledge and listen GuZheng</label></p>
+    <p><label class="choice"> <input type="radio" name="goal" required value="forms"> Explore diverse performing forms </label></p>
+    <p><label class="choice"> <input type="radio" name="goal" required value="people"> Meeting people with same interest </label></p>
     </fieldset>
 
     <p>
-    <label>Pickup Date/Time
-    <input type="datetime-local" name="pickup_time" required>
-    </label>
-    </p>
-
-    <p>
-    <label>Pickup Place
-    <select id="pickup_place" name="pickup_place">
-    <option value="" selected="selected">Select One</option>
-    <option value="office" >Taxi Office</option>
-    <option value="town_hall" >Town Hall</option>
-    <option value="telepathy" >We'll Guess!</option>
-    </select>
-    </label>
-    </p>
-
-    <p>
-    <label>Dropoff Place
-    <input type="text" name="dropoff_place" required list="destinations">
-    </label>
-
-    <datalist id="destinations">
-    <option value="Airport">
-    <option value="Beach">
-    <option value="Fred Flinstone's House">
-    </datalist>
-    </p>
-
-    <p>
-    <label>Special Instructions
+    <Legend>Other things we need to know</Legend>
     <textarea name="comments" maxlength="500"></textarea>
-    </label>
+
     </p>
 
-    <p><button>Submit Booking</button></p>
+    <p><button type="submit" form="myForm" value="Submit">Submit</button></p>
+    <a href="index.html" class="btn">Back to Homepage</a>
 
     </form>
 
